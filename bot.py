@@ -105,7 +105,7 @@ class HowToPlay(discord.ui.View):
 
         embed = discord.Embed(title="How To Play", description="", color=0x00ff00)
         embed.add_field(name="Join a voice channel.", value="You need to be in a voice channel to play the game.\nBe in a voice channel and use `/join` to make the bot join your voice channel.", inline=False)
-        embed.add_field(name="Start the game.", value="Use `/play` to start the game.\nYou will be asked for conformation prompt.\nThen you will be greeted with **two** game modes to choose from choose any of them to staty the game.", inline=False)
+        embed.add_field(name="Start the game.", value="Use `/play` to start the game.\nYou will be asked for conformation prompt.\nThen you will be greeted with **two** game modes to choose from choose any of them to start the game.", inline=False)
         embed.add_field(name="Start playing.", value="You will be asked a question and you will have 4 options to choose from.\nYou can only choose one option per question.\nTotal of 5 questions will be asked and will be concluded by saying your points.", inline=False)
         await interaction.response.edit_message(embed=embed,view=self)
 class ConfirmPlay(discord.ui.View):
