@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 import random
+import os
 
 bot = discord.Bot(debug_guilds=[927905225694666813])
 game_data = {}
@@ -238,4 +239,4 @@ async def ask_question_voice(ctx):
 
     await ctx.channel.send("Who's voice do you hear play?", view=view)
 
-bot.run("OTI3OTAzNjQ5MjAyNTY5MjE3.YdQ_nQ.3Pg6zxHv0KMLzy_Yjo2rsXGQFG4")
+bot.run(os.getenv('TOKEN'))
