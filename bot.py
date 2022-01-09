@@ -3,7 +3,7 @@ from discord.ext import commands
 import random
 import os
 
-bot = discord.Bot(debug_guilds=[927905225694666813])
+bot = discord.Bot()
 game_data = {}
 
 class OptionsButton(discord.ui.View):
